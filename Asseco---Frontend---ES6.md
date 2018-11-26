@@ -1,5 +1,4 @@
-# Asseco - Frontend - ES6
-## Zakres tematyczny szkolenia
+# Zakres tematyczny szkolenia
 1. Narzędzia i konfiguracja środowiska
     * Edytory
     * NodeJS i NPM/Yarn
