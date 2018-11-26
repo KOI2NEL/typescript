@@ -22,5 +22,5 @@ Java Script jest „Case Sensitive” - czyli wielkość liter ma w nim znaczeni
 
 ```
 var lastName = "Doe";
-var lastname = „Peterson";
+var lastname = "Peterson";
 ```
