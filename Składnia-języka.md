@@ -23,3 +23,13 @@ var lastname = "Peterson";
 ```
 ***
 ### Słowa kluczowe
+Słowo | Opis znaczenia
+--- | ---
+*break* | przerywa działanie instrukcji **switch** lub **pętli**
+** | 
+** | 
+** | 
+** | 
+** | 
+** | 
+** | 
