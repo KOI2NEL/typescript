@@ -26,10 +26,16 @@ var lastname = "Peterson";
 Słowo | Opis znaczenia
 --- | ---
 *break* | przerywa działanie instrukcji **switch** lub **pętli**
-** | 
-** | 
-** | 
-** | 
-** | 
-** | 
-** | 
+*continue* | pozwala "wyskoczyć" z bieżącego przebiegu pętli i rozpoczyna kolejny
+*debugger* | zatrzymuje wykonanie skryptu i wywołuje "debuggera" w przeglądarce
+*do...while* | wykonuje w pętli blok instrukcji dopóki zadeklarowany warunek jest spełniony
+*for* | wykonuje w pętli blok instrukcji dopóki zadeklarowany warunek jest spełniony
+*function* | deklaruje funkcję
+*if...else* | wykonuje bloki instrukcji w zależności od zadeklarowanych warunków
+*return* | kończy wykonanie funkcji
+*switch* | wykonuje bloki instrukcji w zależności od zadeklarowanych przypadków
+*try...catch* | implementuje przechwytywanie błędów w bloku instrukcji
+*var* | deklaruje zmienną
+*let* | deklaruje zmienną
+*const* | deklaruje stałą
+### Komentarze
