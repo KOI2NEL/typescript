@@ -20,5 +20,7 @@ Cyfry nie mogą być użyte jako pierwszy znak w nazwie, bo Java Script po pierw
 
 Java Script jest „Case Sensitive” - czyli wielkość liter ma w nim znaczenie.
 
-`var lastName = "Doe";`
-`var lastname = „Peterson";`
+```
+var lastName = "Doe";
+var lastname = „Peterson";
+```
