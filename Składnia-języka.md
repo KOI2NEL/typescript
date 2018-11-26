@@ -129,7 +129,7 @@ Operator | Opis znaczenia
 Operator | Opis znaczenia
 --- | ---
 *&&* | logiczne "i"
-*||* | logiczne "lub"
+*\|\|* | logiczne "lub"
 *!* | logiczne "nie" (negacja)
 ***
 ### Operatory typu
