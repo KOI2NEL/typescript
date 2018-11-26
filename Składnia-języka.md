@@ -137,3 +137,17 @@ Operator | Opis znaczenia
 --- | ---
 *typeof* | zwraca typ zmiennej
 *instanceof* | zwraca "true" jeśli obiekt jest instancją typu obiekt
+***
+### Typy danych
+Java Script jest językiem o dynamicznym typowaniu danych. Oznacza to, że te same zmienne mogą być użyte do przechowywania różnych typów danych.
+Typy danych można podzielić na 2 grupy:
+* **typy prymitywne**
+*string* | łańcuch tekstowy
+*number* | liczba
+*boolean* | wartość logiczna (true/false)
+*undefined* | brak wartości
+* **typy złożone**
+*function* | funkcja
+*object* | obiekt, tablica, null
+***
+### Funkcje
