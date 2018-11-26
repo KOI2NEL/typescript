@@ -2,7 +2,7 @@
 
 Program komputerowy składa się z **listy instrukcji** wykonywanych przez komputer.
 
-W języku Java Script instrukcje takie noszą nazwę „**statements**” - w języku polskim tłumaczone na „**instrukcja**” lub „**rozkaz**”.
+W języku Java Script instrukcje takie noszą nazwę **statements** - w języku polskim tłumaczone na **instrukcja** lub **rozkaz**.
 
 ### Instrukcje w Java Script składają się z:
 * **Values** - wartości: literały (Number, String) i zmiennych
@@ -90,3 +90,50 @@ var person = "John Doe",
 carName = "Volvo",
 price = 200;
 ```
+***
+### Operatory arytmetyczne
+Operator | Opis znaczenia
+--- | ---
+*+* | dodawanie
+*-* | odejmowanie
+*\** | mnożenie
+*/* | dzielenie
+*%* | modulo (reszta z dzielenia)
+*++* | inkrementacja (zwiekszenie o 1)
+*--* | dekrementacja (zmniejszenie o 1)
+***
+### Operatory przypisania
+Operator | Przykład | Odpowiednik
+--- | --- | ---
+*=* | x = y | 
+*+=* | x += y | x = x + y
+*-=* | x -= y | x = x - y
+*\*=* | x *= y | x = x * y
+*/=* | x /= y | x = x / y
+*%=* | x %= y | x = x % y
+***
+### Operatory porównania
+Operator | Opis znaczenia
+--- | ---
+*==* | równa wartość
+*===* | równa wartość i typ
+*!=* | różna wartość
+*!==* | różna wartość i typ
+*>* | większe
+*<* | mniejsze
+*>=* | większe równe
+*<=* | mniejsze równe
+*?* | operator trójskładnikowy
+***
+### Operatory logiczne
+Operator | Opis znaczenia
+--- | ---
+*&&* | logiczne "i"
+*||* | logiczne "lub"
+*!* | logiczne "nie" (negacja)
+***
+### Operatory typu
+Operator | Opis znaczenia
+--- | ---
+*typeof* | zwraca typ zmiennej
+*instanceof* | zwraca "true" jeśli obiekt jest instancją typu obiekt
