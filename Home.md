@@ -4,7 +4,7 @@
     * NodeJS i NPM/Yarn
     * Praca z przeglądarką www
 1. Wprowadzenie do Java Script
-1. Składnia języka
+1. [Składnia języka](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Sk%C5%82adnia-j%C4%99zyka)
     * [Identyfikatory](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Identyfikatory)
     * [Słowa kluczowe](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/S%C5%82owa-kluczowe)
     * [Komentarze](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Komentarze)
