@@ -1,5 +1,34 @@
 ## Warunki
+### if
+```
+if (condition) {
+  statements
+}
 
+if (condition) {
+  statements
+} else {
+  statements
+}
+
+if (condition) {
+  statements
+} else if (condition) {
+  statements
+} else {
+  statements
+}
+```
+### switch
+```
+switch (expression) {
+  case expression:
+    statements
+  default:
+    statements
+}
+```
+***
 ## Pętle
 ### for
 ```
