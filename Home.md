@@ -16,6 +16,7 @@
     * Funkcje
     * Obiekty
     * Klasy
+    * Tablice
     * Scope
     * Eventy
     * Promise
