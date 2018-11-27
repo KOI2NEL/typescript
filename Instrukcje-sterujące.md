@@ -1,4 +1,3 @@
-## Warunki
 ### if
 ```
 if (condition) {
@@ -28,8 +27,23 @@ switch (expression) {
     statements
 }
 ```
+### try
+```
+try {
+  statements
+} catch (variable) {
+  statements
+}
+
+try {
+  statements
+} catch (variable) {
+  statements
+} finally {
+  statements
+}
+```
 ***
-## Pętle
 ### for
 ```
 const list = ['a', 'b', 'c']
