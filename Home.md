@@ -12,7 +12,7 @@
     * [Typy danych](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Typy-danych)
     * [Wyrażenia](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Wyra%C5%BCenia)
     * [Instrukcje sterujące](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Instrukcje-steruj%C4%85ce)
-    * Obsługa błędów
+    * [Obsługa błędów](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Obs%C5%82uga-b%C5%82%C4%99d%C3%B3w)
     * Funkcje
     * Obiekty
     * Klasy
