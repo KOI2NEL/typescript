@@ -23,6 +23,11 @@ if (condition) {
 switch (expression) {
   case expression:
     statements
+
+  case expression:
+  case expression:
+    statements
+
   default:
     statements
 }
