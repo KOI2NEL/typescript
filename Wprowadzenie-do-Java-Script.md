@@ -1,4 +1,3 @@
-# Wprowadzenie do Java Script
 ## Ciekawostki
 * jeden z najbardziej popularnych języków programowania na świecie
 * ma 20 lat i przez ten czas mocno ewoluował
