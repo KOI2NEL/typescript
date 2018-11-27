@@ -1,6 +1,5 @@
-### Słowa kluczowe - zarezerwowane
-Słowo | Opis znaczenia
---- | ---
+Słowa kluczowe to identyfikatory które są zarezerwowane dla składni języka Java Script i nie mogą być użyte w kodzie jako nazwy identyfikatorów.
+
 ```
 break
 do
