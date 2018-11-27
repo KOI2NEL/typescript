@@ -46,6 +46,10 @@ try {
 ***
 ### for
 ```
+for (initialization; condition; update) {
+  statements
+}
+
 const list = ['a', 'b', 'c']
 for (let i = 0; i < list.length; i++) {
   console.log(list[i]) //value
@@ -69,6 +73,10 @@ list.forEach(item => console.log(item))
 
 ### do...while
 ```
+do {
+  statements
+} while (condition);
+
 const list = ['a', 'b', 'c']
 let i = 0
 do {
@@ -93,6 +101,10 @@ if (something) continue
 
 ### while
 ```
+while (condition) {
+  statements
+}
+
 const list = ['a', 'b', 'c']
 let i = 0
 while (i < list.length) {
