@@ -1,6 +1,6 @@
 Java Script jest językiem o dynamicznym typowaniu danych. Oznacza to, że te same zmienne mogą być użyte do przechowywania różnych typów danych.
 Typy danych można podzielić na 2 grupy:
-* **typy prymitywne**
+### Typy prymitywne
 
 Typ | Opis 
 --- | ---
@@ -9,7 +9,7 @@ Typ | Opis
 *boolean* | wartość logiczna (true/false)
 *undefined* | brak wartości
 
-* **typy złożone**
+### Typy złożone
 
 Typ | Opis 
 --- | ---
