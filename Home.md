@@ -16,6 +16,7 @@
     * Obsługa błędów
     * Funkcje
     * Obiekty
+    * Klasy
     * Scope
     * Eventy
     * Promise
