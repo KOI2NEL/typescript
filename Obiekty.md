@@ -49,15 +49,93 @@ Wartości prymitywne są "niemutowalne", czyli nie można ich zmienić.
 
 Obiekt można stworzyć na 3 sposoby:
 * Przy użyciu literału obiektu
-  ```  
-   var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; 
-  ```
+```  
+ var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; 
+```
 * Przy użyciu słowa kluczowego `new` 
-  ```
-  var person = new Object();
-   person.firstName = "John"; 
-  person.lastName = "Doe";
-   person.age = 50; 
-  person.eyeColor = "blue"; 
-  ```
+```
+var person = new Object();
+person.firstName = "John"; 
+person.lastName = "Doe";
+person.age = 50; 
+person.eyeColor = "blue"; 
+```
 * Definiując konstruktor obiektu, a następnie tworząc obiekt typu konstruktora
+
+### Właściwości obiektu (properties)
+Właściwości obiektu są dostępne na kilka sposobów:
+```
+objectName.property          // person.age
+objectName["property"]       // person["age"]
+objectName[expression]       // x = "age"; person[x]
+```
+
+Dostęp do właściwości poprzez pętlę for…in:
+```
+for (key in object) {
+    console.log(object[key])
+}
+```
+
+Dodawanie nowych właściwości:
+```
+person.nationality = "English";
+```
+
+Kasowanie właściwości:
+```
+delete person.age;   // or delete person["age"]; 
+```
+
+**Uwagi:**
+* Do tworzenia nazw właściwości (i metod) nie można używać zarezerwowanych słów kluczowych
+* Kasowanie za pomocą słowa kluczowego `delete` kasuje zarówno wartość właściwości jak i samą właściwość
+* Słowo kluczowe `delete` działa tylko na właściwościach obiektów, nie działa na zmiennych i funkcjach.
+* Słowo kluczowe `delete` nie powinno być używane na właściwościach natywnych obiektów w Java Script, w przeciwnym razie grozi to "uszkodzeniem" aplikacji.
+
+**Inny sposób na tworzenie właściwości obiektu:**
+```
+var person = Object.create(null);
+Object.defineProperty(person, 'firstName', {
+  value: „Maciej",
+  writable: true,
+  enumerable: true,
+  configurable: true
+});
+```
+
+Właściwość domyślnie posiada swoją nazwę i wartość. Tak naprawdę posiada jeszcze kilka właściwości:
+* Enumerable - jeśli właściwość ma być widoczna podczas iterowania po właściwościach obiektu
+* Configurable - jeśli właściwość może być zmieniana i kasowana z obiektu
+* Writable - jeśli wartość właściwości może być zmieniana za pomocą operatora przypisania (=) 
+
+### Metody obiektu (methods)
+
+Metody obiektu można wywołać za pomocą:
+```
+objectName.methodName()
+```
+
+Dodawanie nowych metod:
+```
+person.name = function () {
+  return this.firstName + " " + this.lastName;
+};
+```
+
+Kasowanie metod:
+```
+delete person.name;   // or delete person["age"]; 
+```
+
+**Uwagi:**
+* W definicji funkcji słowo kluczowe `this` odnosi się do „właściciela” (kontekstu) funkcji
+* Użyte bezpośrednio słowo `this` odnosi się do globalnego obiektu, w przeglądarce www będzie to obiekt window.
+* Użyte w funkcji, słowo `this` odnosi się do globalnego obiektu
+* W trybie `strict` słowo `this` zwróci wartość undefined, bo tryb ten nie pozwala na domyślne przypisanie kontekstu
+```
+ "use strict"; 
+function myFunction() { 
+  return this; 
+} 
+```
