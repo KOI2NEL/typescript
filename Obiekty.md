@@ -139,3 +139,142 @@ function myFunction() { 
   return this; 
 } 
 ```
+
+### Prototypy i dziedziczenie
+
+**Tworzenie pustego obiektu**
+```
+var person = Object.create(null);
+
+Object.defineProperty(person, 'firstName', {
+  value: "Maciej",
+  writable: true,
+  enumerable: true,
+  configurable: true
+});
+
+Object.defineProperty(person, 'lastName', {
+  value: "Walczak",
+  writable: true,
+  enumerable: true,
+  configurable: true
+});
+```
+
+**Object.create(null)** - tworzy instancję „czystego” obiektu, czyli bez żadnego prototypu. Taki obiekt może być głównym prototypem dla innych obiektów.
+
+**Object.defineProperty(object, name, config)** - metoda ta tworzy właściwości w przekazanym do niej obiekcie. Pozwala na ustawienie konfiguracji właściwości za pomocą obiektu konfiguracyjnego i jego właściwości:
+* Value
+* Writable
+* Enumerable
+* Configurable
+
+**Prototyp** - to inaczej wskaźnik w obiekcie do innego obiektu. Kiedy w bieżącym obiekcie próbujemy odwołać się do nieistniejącej w nim właściwości lub metody, JavaScript będzie szukać ich w prototypie danego obiektu - aż do głównego elementy, który nie ma swojego prototypu. W takiej sytuacji JS zwróci wartość undefined.
+
+```
+var person = Object.create(null);
+
+Object.defineProperty(person, 'fullName', {
+ value: function() {
+  return this.firstName + ' ' + this.lastName;
+ },
+ writable: true,
+ enumerable: true,
+ configurable: true
+});
+
+var man = Object.create(person);
+
+Object.defineProperty(man, 'sex', {
+ value: 'mężczyzna',
+ writable: true,
+ enumerable: true,
+ configurable: true
+});
+
+var maciek = Object.create(man);
+
+Object.defineProperty(maciek, 'firstName', {
+ value: 'Maciej',
+ writable: true,
+ enumerable: true,
+ configurable: true
+});
+
+Object.defineProperty(maciek, 'lastName', {
+ value: 'Walczak',
+ writable: true,
+ enumerable: true,
+ configurable: true
+});
+
+maciek.sex        // "mężczyzna"
+maciek.fullName() // "Maciej Walczak"
+```
+
+W tym kodzie najpierw tworzymy obiekt `person`, który nie ma swojego prototypu, jest więc najwyżej położonym w strukturze obiektem.
+
+Następnie w obiekcie person tworzymy metodę zwracającą wynik wykonania funkcji. Metoda ta będzie wspólna dla wszystkich instancji obiektów, dla których obiekt person będzie prototypem.
+
+W dalszej kolejności tworzymy obiekt `maciek`, dla którego w metodzie `Object.create(person)` jako prototyp użyliśmy obiektu `person`.
+
+Po utworzeniu właściwości w obiekcie `maciek` i użyciu metody `maciek.fullName()` z jego prototypu, dostajemy wynik wykonania tej metody.
+
+**Tworzenie obiektów za pomocą literałów**
+
+**Literał obiektu** - to składniowo uproszczony sposób tworzenia obiektów.
+
+Literał:
+```
+var person = { firstName: "Paul", lastName: "Irish" }
+```
+Klasyczny obiekt:
+```
+var person = Object.create(Object.prototype);
+person.firstName = "Paul";
+person.lastName  = "Irish";
+```
+
+Najważniejszą cechą tworzenia obiektów za pomocą literałów jest fakt, że każdy tak stworzony obiekt jako prototyp będzie posiadał `Object.prototype`.
+
+**Tworzenie obiektów z zachowaniem dziedziczenia**
+```
+var fromPrototype = function(prototype, object) {
+  var newObject = Object.create(prototype);
+
+  for (var prop in object) {
+    if (object.hasOwnProperty(prop)) {
+      newObject[prop] = object[prop];      
+    }
+  }
+  return newObject;
+};
+
+var person = {
+  toString: function() {
+    return this.firstName + ' ' + this.lastName;
+  }
+};
+
+var man = fromPrototype(person, {
+  sex: "male"
+});
+
+var jeremy = fromPrototype(man, {
+  firstName: "Jeremy",
+  lastName:  "Ashkenas"
+});
+
+jeremy.sex        // "male"
+jeremy.toString() // "Jeremy Ashkenas"
+```
+
+W tym przykładzie tworzymy najpierw (za pomocą literału) obiekt `person` (ma on w swoim prototypie `Object.prototype`).
+
+Następnie w obiekcie `person` tworzymy metodę `toString()`, która nadpisuje metodę z `Object.prototype`.
+
+Następnie z wykorzystaniem funkcji `fromPrototype`, tworzymy obiekt `man`, którego prototypem jest obiekt `person`.
+
+Na końcu w analogiczny sposób tworzymy obiekt `jeremy`, którego prototypem jest obiekt `man`.
+
+W ten sposób obiekt `jeremy` dziedziczy część właściwości i metod z obiektów będących jego prototypami.
