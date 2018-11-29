@@ -16,7 +16,7 @@
     * [Funkcje](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Funkcje)
     * [Obiekty](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Obiekty)
     * [Klasy](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Klasy)
-    * Tablice
+    * [Tablice](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Tablice)
     * Scope
     * Eventy
     * Promise
