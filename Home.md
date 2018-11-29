@@ -15,7 +15,7 @@
     * [Obsługa błędów](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Obs%C5%82uga-b%C5%82%C4%99d%C3%B3w)
     * [Funkcje](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Funkcje)
     * [Obiekty](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Obiekty)
-    * Klasy
+    * [Klasy](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Klasy)
     * Tablice
     * Scope
     * Eventy
