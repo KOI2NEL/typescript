@@ -2,6 +2,7 @@
 * Każdy obiekt w Java Script posiada właściwość `prototype`, która wskazuje na inny obiekt
 * Ten inny obiekt to prototyp obiektu
 * Obiekt używa prototypu by po nim dziedziczyć właściwości i metody
+* Odziedziczone z prototypu metody i właściwości można w obiekcie nadpisać
 
 Utworzenie obiektu:
 ```
