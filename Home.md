@@ -8,7 +8,7 @@
   * obsługę koszyka zakupów
 
 
-# Zakres tematyczny szkolenia
+# Zakres tematyczny
 1. Narzędzia i konfiguracja środowiska - omówienie
 1. Praca z przeglądarką www - omówienie
 1. Podstawy HTML i CSS - prezentacja
@@ -27,3 +27,4 @@
     * [Obiekty](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Obiekty)
     * [Klasy](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Klasy)
     * [Tablice](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Tablice)
+1. Wprowadzenie do Type Script
