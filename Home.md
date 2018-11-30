@@ -10,6 +10,14 @@
 
 # Zakres tematyczny
 1. Narzędzia i konfiguracja środowiska - omówienie
+    * [WebStorm](https://www.jetbrains.com/webstorm)
+    * [Visual Studio Code](https://code.visualstudio.com)
+    * [SublimeText](https://www.sublimetext.com)
+    * [Node.js](https://nodejs.org)
+    * [Caniuse](https://caniuse.com)
+    * [W3Schools](https://www.w3schools.com/js)
+    * [MDN](https://developer.mozilla.org/pl/docs/Web/JavaScript)
+    * [Codewars](https://www.codewars.com/landing?language=javascript)
 1. Praca z przeglądarką www - omówienie
 1. Podstawy HTML i CSS - prezentacja
 1. [Wprowadzenie do Java Script](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Wprowadzenie-do-Java-Script)
