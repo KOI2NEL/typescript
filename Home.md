@@ -1,3 +1,13 @@
+# Cele szkolenia
+* Szkoleniowy: zapoznanie się z technologiami frontendowymi
+  * HTML/CSS
+  * Java Script
+  * Type Script
+* Praktyczny: stworzenie stron www realizujących:
+  * kalkulator
+  * obsługę koszyka zakupów
+
+
 # Zakres tematyczny szkolenia
 1. Narzędzia i konfiguracja środowiska - omówienie
 1. Praca z przeglądarką www - omówienie
