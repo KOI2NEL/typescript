@@ -1,7 +1,7 @@
 # Zakres tematyczny szkolenia
-1. Narzędzia i konfiguracja środowiska
-1. Praca z przeglądarką www
-1. Podstawy HTML i CSS
+1. Narzędzia i konfiguracja środowiska - omówienie
+1. Praca z przeglądarką www - omówienie
+1. Podstawy HTML i CSS - prezentacja
 1. [Wprowadzenie do Java Script](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Wprowadzenie-do-Java-Script)
 1. [Składnia języka](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Sk%C5%82adnia-j%C4%99zyka)
     * [Identyfikatory](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Identyfikatory)
@@ -17,9 +17,3 @@
     * [Obiekty](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Obiekty)
     * [Klasy](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Klasy)
     * [Tablice](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Tablice)
-    * Eventy
-    * Promise
-    * Cookies
-    * Storage
-1. Podstawy NodeJS
-1. Podstawy Webpack
