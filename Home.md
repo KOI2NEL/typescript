@@ -35,4 +35,4 @@
     * [Obiekty](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Obiekty)
     * [Klasy](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Klasy)
     * [Tablice](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Tablice)
-1. Wprowadzenie do Type Script
+1. [Wprowadzenie do Type Script](https://github.com/MacWebcoder/asseco-frontend-es6/wiki/Wprowadzenie-do-Type-Script)
